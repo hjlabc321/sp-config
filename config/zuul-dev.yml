@@ -3,8 +3,8 @@ spring:
     name: zuul
   cloud:
     config:
-      override-none: true  
-  
+      override-none: true
+        
 server:
   port: 3001
   
@@ -15,7 +15,8 @@ eureka:
 
 zuul:
   retryable: true
-  sensitive-headers: Cookie, set-Cookie, Authorization
+  sensitive-headers: 
+  
 #  routes:
 #    item-service: /item-service/**
 #    user-service: /user-service/**
